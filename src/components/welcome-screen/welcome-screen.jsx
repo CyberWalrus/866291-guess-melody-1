@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default class WelcomeScreen extends React.Component {
   constructor(props) {
@@ -23,6 +24,6 @@ export default class WelcomeScreen extends React.Component {
 }
 
 WelcomeScreen.propTypes = {
-  time: Number,
-  errorCount: Number
+  time: PropTypes.number.isRequired,
+  errorCount: PropTypes.number.isRequired
 };

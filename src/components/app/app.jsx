@@ -1,5 +1,6 @@
 import React from "react";
 import WelcomeScreen from "../welcome-screen/welcome-screen.jsx";
+import PropTypes from "prop-types";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -14,6 +15,6 @@ export default class App extends React.Component {
 }
 
 App.propTypes = {
-  gameTime: Number,
-  errorCount: Number
+  gameTime: PropTypes.number.isRequired,
+  errorCount: PropTypes.number.isRequired
 };
