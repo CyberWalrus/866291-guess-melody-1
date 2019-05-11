@@ -9,11 +9,9 @@ export default class App extends React.Component {
   }
 
   render() {
-    const testFunc = () => null;
     return <WelcomeScreen
       time={this.props.gameTime}
       errorCount={this.props.errorCount}
-      onWelcomButtonClick={testFunc}
     />;
   }
 }
